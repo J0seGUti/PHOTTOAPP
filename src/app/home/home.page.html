@@ -1,0 +1,47 @@
+<ion-content>
+  <ion-button fill="clear" (click)="redirigirALogin()">
+    <ion-icon class="salir" name="arrow-back-outline"></ion-icon>
+  </ion-button>
+<ion-row>
+  <ion-col>
+    <ion-card class="top-left-card" (click)="navegarARegistro()">
+      <ion-card-header>
+        <ion-icon name="document-text-outline"></ion-icon>
+      </ion-card-header>
+      <ion-card-content>
+        REGISTRARSE
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="top-right-card" routerLink="/music">
+      <ion-card-header>
+        <ion-icon name="musical-notes-outline"></ion-icon>
+      </ion-card-header>
+      <ion-card-content>
+        MUSICA
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+
+  <ion-col>
+    <ion-card class="top-right-card" (click)="navegarAPhotos()">
+      <ion-card-header>
+        <ion-icon name="images-outline"></ion-icon>
+      </ion-card-header>
+      <ion-card-content>
+        FOTOS
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="top-right-card" (click)="redirectToApiPage()">
+      <ion-card-header>
+        <ion-icon name="barcode-outline"></ion-icon>
+      </ion-card-header>
+      <ion-card-content>
+        POKE API
+      </ion-card-content>
+    </ion-card>
+
+  </ion-col>
+</ion-row>
+</ion-content>

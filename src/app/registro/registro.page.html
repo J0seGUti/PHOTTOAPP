@@ -1,0 +1,35 @@
+<ion-content class="ion-padding">
+  <ion-icon class="atras" (click)="regresarAHome()" name="arrow-undo-outline"></ion-icon>
+  <ion-card>
+    <ion-toolbar>
+      <ion-title>REGISTRO</ion-title>
+    </ion-toolbar>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nombres</ion-label>
+        <ion-input type="text" [(ngModel)]="nombres" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Apellidos</ion-label>
+        <ion-input type="text" [(ngModel)]="apellidos" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input type="email" [(ngModel)]="correo" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" [(ngModel)]="usuario" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="contrasena" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Repetir Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="repetirContrasena" required></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <ion-button (click)="registrar()">Registrar</ion-button>
+  </ion-card>
+</ion-content>

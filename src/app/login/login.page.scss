@@ -1,0 +1,43 @@
+ion-card {
+  margin: 20px;
+  background: white;
+  border-radius: 20px;
+  margin-top: 140PX;
+  box-shadow: 2px 2px 15px 2px black;
+}
+ion-toolbar{
+  --background: #EA9010;
+}
+ion-title{
+  font-size: 24PX;
+}
+.ion-padding{
+  --background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: url('../../assets/FONDO1.png') top center / cover no-repeat,
+              url('../../assets/FONDO2.png') bottom center / cover no-repeat;
+  background-size: 375px;
+  background-color: white;
+}
+ion-button{
+  --background: #EA9010;
+  border-radius: 10px;
+  width: 200px;
+  margin-left: 50px;
+}
+ion-item {
+  margin-top: 15px;
+  --background:rgba(230, 177, 177, 0.505);
+  border-radius: 15px;
+  height: 60px;
+  color: #606060;
+}
+ion-input{
+  color: black;
+  font-size: 20px;
+}
+
+

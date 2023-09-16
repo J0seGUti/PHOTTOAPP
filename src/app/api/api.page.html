@@ -1,0 +1,260 @@
+<ion-content>
+  <ion-icon class="atras" (click)="redirigirAHome()" name="arrow-undo-outline"></ion-icon>
+  <p class="titulo">API</p>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('pikachu', 1)">
+          <ion-label class="hola">Pikachu</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon1 && mostrarPokemon1">
+          <ion-item *ngIf="pokemon1.imagen">
+            <ion-img class="ima"[src]="pokemon1.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon1.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon1.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon1.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon1.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('squirtle', 2)">
+          <ion-label class="hola">Squirtle</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon2 && mostrarPokemon2">
+          <ion-item *ngIf="pokemon2.imagen">
+            <ion-img class="ima" [src]="pokemon2.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon2.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon2.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon2.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon2.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('charmander', 3)">
+          <ion-label class="hola">Charmander</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon3 && mostrarPokemon3">
+          <ion-item *ngIf="pokemon3.imagen">
+            <ion-img class="ima" [src]="pokemon3.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon3.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon3.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon3.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon3.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('bulbasaur', 4)">
+          <ion-label class="hola">Bulbasaur</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon4 && mostrarPokemon4">
+          <ion-item *ngIf="pokemon4.imagen">
+            <ion-img class="ima" [src]="pokemon4.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon4.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon4.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon4.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon4.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('pidgey', 5)">
+          <ion-label class="hola">Pidgey</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon5 && mostrarPokemon5">
+          <ion-item *ngIf="pokemon5.imagen">
+            <ion-img class="ima" [src]="pokemon5.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon5.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon5.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon5.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon5.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('jigglypuff', 6)">
+          <ion-label class="hola">Jigglypuff</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon6 && mostrarPokemon6">
+          <ion-item *ngIf="pokemon6.imagen">
+            <ion-img class="ima" [src]="pokemon6.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon6.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon6.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon6.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon6.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('rattata', 7)">
+          <ion-label class="hola">Rattata</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon7 && mostrarPokemon7">
+          <ion-item *ngIf="pokemon7.imagen">
+            <ion-img class="ima" [src]="pokemon7.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon7.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon7.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon7.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon7.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('meowth', 8)">
+          <ion-label class="hola">Meowth</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon8 && mostrarPokemon8">
+          <ion-item *ngIf="pokemon8.imagen">
+            <ion-img class="ima" [src]="pokemon8.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon8.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon8.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon8.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon8.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('geodude', 9)">
+          <ion-label class="hola">Geodude</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon9 && mostrarPokemon9">
+          <ion-item *ngIf="pokemon9.imagen">
+            <ion-img class="ima" [src]="pokemon9.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon9.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon9.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon9.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon9.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+      <ion-list>
+        <ion-item (click)="cargarDatosPokemon('magikarp', 10)">
+          <ion-label class="hola">Magikarp</ion-label>
+          <ion-button slot="end">ver</ion-button>
+        </ion-item>
+        <ion-list *ngIf="pokemon10 && mostrarPokemon10">
+          <ion-item *ngIf="pokemon10.imagen">
+            <ion-img class="ima" [src]="pokemon10.imagen"></ion-img>
+          </ion-item>
+          <ion-item>
+            <ion-label>Nombre: {{ pokemon10.nombre }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Peso: {{ pokemon10.peso }} kg</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fuerza: {{ pokemon10.fuerza }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Habilidades: {{ pokemon10.habilidades.join(', ') }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+  <div style="margin-bottom: 60px;"></div>
+
+  <ion-toolbar position="bottom" style="position: fixed; bottom: 0; width: 100%;">
+  </ion-toolbar>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon class="fin" name="code-slash-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-content>
+  <ion-icon class="atras" (click)="redirigirAHome()" name="arrow-undo-outline"></ion-icon>
+  <p class="titulo">FOTOS</p>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Foto: {{ photoTitles[0] }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="imageSource1">
+      <ion-label>{{ photoDates[0] }}</ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Foto: {{ photoTitles[1] }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="imageSource2">
+      <ion-label>{{ photoDates[1] }}</ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Foto: {{ photoTitles[2] }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img [src]="imageSource3">
+      <ion-label>{{ photoDates[2] }}</ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <div style="margin-bottom: 60px;"></div>
+
+  <ion-toolbar position="bottom" style="position: fixed; bottom: 0; width: 100%;">
+  </ion-toolbar>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="takePicture()">
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-icon class="atras" (click)="redirigirAHome()" name="arrow-undo-outline"></ion-icon>
+<p class="titulo">MUSICA</p>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item *ngFor="let cancion of canciones; let i = index">
+          <ion-label>{{ nombresCanciones[i] }}</ion-label>
+          <ion-button class="play" (click)="toggleMusic(cancion)">
+            <ion-icon slot="end" [name]="stateCanciones[cancion] ? 'stop' : 'play-circle'"></ion-icon>
+          </ion-button>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+<div style="margin-bottom: 60px;"></div>
+
+  <ion-toolbar position="bottom" style="position: fixed; bottom: 0; width: 100%;">
+  </ion-toolbar>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon class="fin" name="volume-high-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
